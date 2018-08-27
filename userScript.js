@@ -106,21 +106,20 @@ function login(){
 }
 
 
-buttonLogin.addEventListener("click",function(){
+buttonLogin.addEventListener("click",() => {
 	login();
 	});
 
-loginPassword.addEventListener("keypress", function(){
+loginPassword.addEventListener("keypress", () => {
 	if (event.keyCode === 13){
 	login();
 	}
 	});
 
-buttonRegister.addEventListener("click",function(){
-	register();
-	});
+buttonRegister.addEventListener("click", () => register() );
 
-regiPasswordCheck.addEventListener("keypress", function(){
+
+regiPasswordCheck.addEventListener("keypress", () => {
 	if (event.keyCode === 13){
 	register();
 	}
